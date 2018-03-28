@@ -1,0 +1,25 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #29B6F6;
+  color: white;
+}
+
+header {
+  margin-top: 2em;
+  font-size: 3em;
+}
+
+#temperature {
+  font-size: 10em;
+}
+
+@media only screen and (max-device-width: 480px) {
+    header {
+      font-size: 4em;
+    }
+
+    #temperature {
+      font-size: 22em;
+    }
+}
