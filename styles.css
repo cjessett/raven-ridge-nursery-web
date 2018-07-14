@@ -11,6 +11,10 @@ header {
   font-size: 3em;
 }
 
+main {
+  margin: 3em;
+}
+
 #temperature {
   font-size: 10em;
 }
