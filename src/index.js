@@ -11,5 +11,6 @@ const iotData = new AWS.IotData({
 
 iotData.getThingShadow({ thingName: 'raven-ridge-nursery-thermometer' }, (err, data) => {
   const { state: { reported: { temp } } } = JSON.parse(data.payload);
-  document.getElementById('temperature').innerText = temp;
+  document.getElementById('temperature').innerText = Math.floor(temp);
+  document.getElementById('units').style.display = 'inline';
 });
